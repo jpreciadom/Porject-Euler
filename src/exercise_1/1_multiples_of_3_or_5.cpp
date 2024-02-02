@@ -1,11 +1,14 @@
-#include <stdio.h>
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 int main() {
-    char *exercise_name = "Multiples of 3 or 5";
+    string exercise_name = "Multiples of 3 or 5";
     long answer = 0;
-    int limit = 1000;
 
     // Your code goes here
+    int limit = 1000;
     for (int i = 3; i < limit; i++) {
         if (i % 3 == 0 || i % 5 == 0) {
             answer+=i;
@@ -13,7 +16,7 @@ int main() {
     }
     // Your code ends here
 
-    printf("%s\n", exercise_name);
-    printf("Answer: %d\n", answer);
+    cout << exercise_name << endl;
+    cout << "Answer: " << answer << endl;
     return 0;
 }

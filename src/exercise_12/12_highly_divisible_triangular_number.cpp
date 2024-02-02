@@ -1,7 +1,10 @@
-#include <stdio.h>
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 int main() {
-    char *exercise_name = "Highly divisible triangular number";
+    string exercise_name = "Highly divisible triangular number";
     long answer = 0;
 
     // Your code goes here
@@ -21,7 +24,7 @@ int main() {
     }
     // Your code ends here
 
-    printf("%s\n", exercise_name);
-    printf("Answer: %ld\n", answer);
+    cout << exercise_name << endl;
+    cout << "Answer: " << answer << endl;
     return 0;
 }
